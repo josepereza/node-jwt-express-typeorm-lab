@@ -8,7 +8,6 @@ class UserController {
 
     static listAll = async (req: Request, res: Response) => {
         //Get users from database
-        console.log("me vuelvoe a cagar")
         const userRepository = getRepository(User);
         const users = await userRepository.find({
             select: ["id", "username", "role"] //We dont want to send the passwords on response
