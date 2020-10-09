@@ -10,3 +10,11 @@ Create a migration
 ```
 Run `npx typeorm migration:create -n CreateAdminUser` command
 ```
+# Para probarlo con Postman:
+* Primero nos logueamos (POST localhost:3000/auth/login), obtenemos el token, lo insertamos dentro de Headers(KEY: auth: VALUE: nuestro-token), 
+  
+![image](typeorm1)
+![image](typeorm2)
+* despues mandamos un get (GET localhost:3000/user/) para obtener un listado de usuarios, o para insertar un usuario nuevo (POST localhost:3000/user/
+![image](typeorm3)
+
